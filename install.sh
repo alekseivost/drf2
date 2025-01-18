@@ -18,7 +18,4 @@ sed -i "s~dbms_template_domain~$project_domain~g" .beget/site.conf drf2/settings
 ln -s $project_path/.beget/site.conf /etc/nginx/sites-enabled/
 ln -s $project_path/.beget/service /etc/systemd/system/
 
-systemctl daemon-reload
-systemctl start beget
-systemctl enable beget
-service nginx restart
+
